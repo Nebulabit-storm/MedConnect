@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - MedConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">🏥</div>
+                <span>MedConnect</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="patient-dashboard.html" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Find Doctors</a>
+                <a href="#" class="navbar-item">My Appointments</a>
+                <a href="#" class="navbar-item">Medical Records</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-badge">2</span>
+                </button>
+                <div class="profile-btn">
+                    <div class="profile-avatar">AK</div>
+                    <span class="profile-name">Amit Kumar</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="patient-dashboard.html" class="sidebar-item active">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a></li>
+                <li><a href="appointment.html" class="sidebar-item">
+                    <span class="sidebar-icon">📅</span>
+                    Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">📁</span>
+                    Upload Documents
+                </a></li>
+                <li><a href="chat.html" class="sidebar-item">
+                    <span class="sidebar-icon">💬</span>
+                    Chat with Doctor
+                </a></li>
+                <li><a href="payment.html" class="sidebar-item">
+                    <span class="sidebar-icon">💳</span>
+                    Payments
+                </a></li>
+                <li><a href="index.html" class="sidebar-item">
+                    <span class="sidebar-icon">🚪</span>
+                    Logout
+                </a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Patient Dashboard</h1>
+                <p class="page-subtitle">Welcome back, Amit Kumar!</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon blue">📅</div>
+                    </div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Upcoming Appointments</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon green">✅</div>
+                    </div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Completed Visits</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon orange">💬</div>
+                    </div>
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Unread Messages</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon red">📁</div>
+                    </div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Documents Uploaded</div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">⚡ Quick Actions</h2>
+                </div>
+                <div class="section-body">
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="appointment.html" class="btn btn-primary">
+                            <span>📅</span> Book Appointment
+                        </a>
+                        <a href="chat.html" class="btn btn-secondary">
+                            <span>💬</span> Chat with Doctor
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <span>📁</span> Upload Documents
+                        </a>
+                        <a href="payment.html" class="btn btn-secondary">
+                            <span>💳</span> Make Payment
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Appointments -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📅 Upcoming Appointments</h2>
+                    <a href="appointment.html" class="btn btn-sm btn-outline">View All</a>
+                </div>
+                <div class="section-body">
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">DR</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Dr. Rahul Sharma</div>
+                            <div class="appointment-detail">General Checkup • 9:00 AM</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">Today</div>
+                            <span class="appointment-status confirmed">Confirmed</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">DN</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Dr. Divya Nair</div>
+                            <div class="appointment-detail">Skin Consultation • 2:30 PM</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">Tomorrow</div>
+                            <span class="appointment-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Find Doctors Section -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">👨‍⚕️ Find Doctors</h2>
+                    <a href="#" class="btn btn-sm btn-outline">View All Doctors</a>
+                </div>
+                <div class="section-body">
+                    <div class="doctor-grid">
+                        <div class="doctor-card">
+                            <div class="doctor-image">👨‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Rahul Sharma</h3>
+                                <p class="doctor-specialization">General Physician</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.9</span>
+                                    <span class="doctor-rating-count">(120 reviews)</span>
+                                </div>
+                                <div class="doctor-actions">
+                                    <a href="appointment.html" class="btn btn-primary btn-sm">Book Now</a>
+                                    <a href="chat.html" class="btn btn-outline btn-sm">Chat</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">👩‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Divya Nair</h3>
+                                <p class="doctor-specialization">Dermatologist</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.8</span>
+                                    <span class="doctor-rating-count">(85 reviews)</span>
+                                </div>
+                                <div class="doctor-actions">
+                                    <a href="appointment.html" class="btn btn-primary btn-sm">Book Now</a>
+                                    <a href="chat.html" class="btn btn-outline btn-sm">Chat</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">👨‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Amit Patel</h3>
+                                <p class="doctor-specialization">Cardiologist</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.9</span>
+                                    <span class="doctor-rating-count">(200 reviews)</span>
+                                </div>
+                                <div class="doctor-actions">
+                                    <a href="appointment.html" class="btn btn-primary btn-sm">Book Now</a>
+                                    <a href="chat.html" class="btn btn-outline btn-sm">Chat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Consultations -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📋 Recent Consultations</h2>
+                </div>
+                <div class="section-body">
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">DR</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Dr. Rahul Sharma</div>
+                            <div class="appointment-detail">General Checkup</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">Last Week</div>
+                            <span class="appointment-status completed">View Prescription</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">DN</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Dr. Divya Nair</div>
+                            <div class="appointment-detail">Skin Consultation</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">2 Weeks ago</div>
+                            <span class="appointment-status completed">View Prescription</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

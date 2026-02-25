@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - MedConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">🏥</div>
+                <span>MedConnect</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="doctor-dashboard.html" class="navbar-item">Dashboard</a>
+                <a href="#" class="navbar-item">Patients</a>
+                <a href="#" class="navbar-item">Appointments</a>
+                <a href="#" class="navbar-item">Prescriptions</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="profile-btn">
+                    <div class="profile-avatar">DR</div>
+                    <span class="profile-name">Dr. Rahul Sharma</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="doctor-dashboard.html" class="sidebar-item active">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">📅</span>
+                    Today's Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">✅</span>
+                    Completed Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">💰</span>
+                    Revenue
+                </a></li>
+                <li><a href="prescription.html" class="sidebar-item">
+                    <span class="sidebar-icon">📝</span>
+                    Write Prescription
+                </a></li>
+                <li><a href="chat.html" class="sidebar-item">
+                    <span class="sidebar-icon">💬</span>
+                    Chat
+                </a></li>
+                <li><a href="index.html" class="sidebar-item">
+                    <span class="sidebar-icon">🚪</span>
+                    Logout
+                </a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Doctor Dashboard</h1>
+                <p class="page-subtitle">Welcome back, Dr. Rahul Sharma!</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon blue">📅</div>
+                        <span class="stat-trend up">+12%</span>
+                    </div>
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Today's Appointments</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon green">✅</div>
+                        <span class="stat-trend up">+8%</span>
+                    </div>
+                    <div class="stat-value">156</div>
+                    <div class="stat-label">Completed This Month</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon orange">👥</div>
+                        <span class="stat-trend down">-3%</span>
+                    </div>
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">Total Patients</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-icon red">💰</div>
+                        <span class="stat-trend up">+15%</span>
+                    </div>
+                    <div class="stat-value">₹45,200</div>
+                    <div class="stat-label">Revenue This Month</div>
+                </div>
+            </div>
+
+            <!-- Today's Appointments -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📅 Today's Appointments</h2>
+                    <a href="appointment.html" class="btn btn-sm btn-outline">View All</a>
+                </div>
+                <div class="section-body">
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">AK</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Amit Kumar</div>
+                            <div class="appointment-detail">General Checkup</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">09:00 AM</div>
+                            <span class="appointment-status confirmed">Confirmed</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">SP</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Sunita Patel</div>
+                            <div class="appointment-detail">Follow-up Visit</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">10:00 AM</div>
+                            <span class="appointment-status confirmed">Confirmed</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">RJ</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Rajesh Jain</div>
+                            <div class="appointment-detail">Consultation</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">11:30 AM</div>
+                            <span class="appointment-status pending">Pending</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">PM</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Priya Mishra</div>
+                            <div class="appointment-detail">Blood Pressure Check</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">02:00 PM</div>
+                            <span class="appointment-status confirmed">Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Section -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">💰 Revenue Overview</h2>
+                </div>
+                <div class="section-body">
+                    <div class="stats-grid" style="margin-bottom: 0;">
+                        <div class="stat-card">
+                            <div class="stat-card-header">
+                                <div class="stat-icon green">📈</div>
+                            </div>
+                            <div class="stat-value">₹45,200</div>
+                            <div class="stat-label">This Month</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card-header">
+                                <div class="stat-icon blue">📅</div>
+                            </div>
+                            <div class="stat-value">₹2,100</div>
+                            <div class="stat-label">Today</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card-header">
+                                <div class="stat-icon orange">📊</div>
+                            </div>
+                            <div class="stat-value">₹18,500</div>
+                            <div class="stat-label">This Week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Completed Appointments -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">✅ Completed Appointments</h2>
+                </div>
+                <div class="section-body">
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">VR</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Vikram Reddy</div>
+                            <div class="appointment-detail">Dental Checkup</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">Yesterday</div>
+                            <span class="appointment-status completed">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">SG</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Sneha Gupta</div>
+                            <div class="appointment-detail">Skin Consultation</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">Yesterday</div>
+                            <span class="appointment-status completed">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card">
+                        <div class="appointment-avatar">MR</div>
+                        <div class="appointment-info">
+                            <div class="appointment-name">Mohit Roy</div>
+                            <div class="appointment-detail">Eye Checkup</div>
+                        </div>
+                        <div class="appointment-time">
+                            <div class="appointment-time-value">2 Days ago</div>
+                            <span class="appointment-status completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

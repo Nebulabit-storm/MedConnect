@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - MedConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">🏥</div>
+                <span>MedConnect</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="patient-dashboard.html" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Find Doctors</a>
+                <a href="appointment.html" class="navbar-item">My Appointments</a>
+                <a href="#" class="navbar-item">Medical Records</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-badge">2</span>
+                </button>
+                <div class="profile-btn">
+                    <div class="profile-avatar">AK</div>
+                    <span class="profile-name">Amit Kumar</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="patient-dashboard.html" class="sidebar-item">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a></li>
+                <li><a href="appointment.html" class="sidebar-item">
+                    <span class="sidebar-icon">📅</span>
+                    Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">📁</span>
+                    Upload Documents
+                </a></li>
+                <li><a href="chat.html" class="sidebar-item active">
+                    <span class="sidebar-icon">💬</span>
+                    Chat with Doctor
+                </a></li>
+                <li><a href="payment.html" class="sidebar-item">
+                    <span class="sidebar-icon">💳</span>
+                    Payments
+                </a></li>
+                <li><a href="index.html" class="sidebar-item">
+                    <span class="sidebar-icon">🚪</span>
+                    Logout
+                </a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" style="padding: 0; height: calc(100vh - 76px);">
+            <div class="chat-container" style="margin: 20px; height: calc(100% - 40px);">
+                <!-- Chat Sidebar -->
+                <div class="chat-sidebar">
+                    <div class="chat-sidebar-header">
+                        <h3 class="chat-sidebar-title">Messages</h3>
+                    </div>
+                    <div class="chat-search">
+                        <input type="text" placeholder="Search conversations...">
+                    </div>
+                    <div class="chat-users">
+                        <div class="chat-user active">
+                            <div class="chat-user-avatar">
+                                DR
+                                <span class="online-indicator"></span>
+                            </div>
+                            <div class="chat-user-info">
+                                <div class="chat-user-name">Dr. Rahul Sharma</div>
+                                <div class="chat-user-preview">Sure, I'll prescribe the medicine...</div>
+                            </div>
+                            <div class="chat-user-time">Now</div>
+                        </div>
+
+                        <div class="chat-user">
+                            <div class="chat-user-avatar">DN</div>
+                            <div class="chat-user-info">
+                                <div class="chat-user-name">Dr. Divya Nair</div>
+                                <div class="chat-user-preview">Please upload the prescription image</div>
+                            </div>
+                            <div class="chat-user-time">2h ago</div>
+                        </div>
+
+                        <div class="chat-user">
+                            <div class="chat-user-avatar">AP</div>
+                            <div class="chat-user-info">
+                                <div class="chat-user-name">Dr. Amit Patel</div>
+                                <div class="chat-user-preview">Your ECG reports look normal</div>
+                            </div>
+                            <div class="chat-user-time">Yesterday</div>
+                        </div>
+
+                        <div class="chat-user">
+                            <div class="chat-user-avatar">SK</div>
+                            <div class="chat-user-info">
+                                <div class="chat-user-name">Dr. Suresh Kumar</div>
+                                <div class="chat-user-preview">Follow the diet plan I shared</div>
+                            </div>
+                            <div class="chat-user-time">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Main Area -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <div class="chat-header-info">
+                            <div class="chat-header-avatar">DR</div>
+                            <div>
+                                <div class="chat-header-name">Dr. Rahul Sharma</div>
+                                <div class="chat-header-status">● Online</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-sm btn-outline">📞 Call</button>
+                            <button class="btn btn-sm btn-outline">📹 Video</button>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="message">
+                            <div class="message-avatar">DR</div>
+                            <div class="message-bubble">
+                                Hello Amit! How are you feeling today?
+                                <div class="message-time">10:30 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-avatar">AK</div>
+                            <div class="message-bubble">
+                                Hi Doctor! I'm feeling much better now. The medicines you prescribed are working well.
+                                <div class="message-time">10:32 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">DR</div>
+                            <div class="message-bubble">
+                                That's great to hear! Have you been taking the medicines regularly?
+                                <div class="message-time">10:33 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-avatar">AK</div>
+                            <div class="message-bubble">
+                                Yes, I've been taking them twice daily as you advised. Should I continue for a few more days?
+                                <div class="message-time">10:35 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">DR</div>
+                            <div class="message-bubble">
+                                Yes, please continue for another 5 days. After that, you can stop the antibiotics but keep taking the vitamin supplements.
+                                <div class="message-time">10:38 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-avatar">AK</div>
+                            <div class="message-bubble">
+                                Perfect! Thank you so much, Doctor. One more thing - is it okay to have coffee?
+                                <div class="message-time">10:40 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-avatar">DR</div>
+                            <div class="message-bubble">
+                                I'd suggest limiting coffee to one cup per day for now. Also, make sure to stay hydrated and get adequate rest.
+                                <div class="message-time">10:42 AM</div>
+                            </div>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-avatar">AK</div>
+                            <div class="message-bubble">
+                                Sure, I'll follow your advice. Thank you for the consultation, Doctor!
+                                <div class="message-time">10:45 AM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="text" class="chat-input" placeholder="Type a message...">
+                        <button class="chat-send-btn">➤</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

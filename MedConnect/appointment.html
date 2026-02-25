@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MedConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">🏥</div>
+                <span>MedConnect</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="patient-dashboard.html" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Find Doctors</a>
+                <a href="appointment.html" class="navbar-item">My Appointments</a>
+                <a href="#" class="navbar-item">Medical Records</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-badge">2</span>
+                </button>
+                <div class="profile-btn">
+                    <div class="profile-avatar">AK</div>
+                    <span class="profile-name">Amit Kumar</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="patient-dashboard.html" class="sidebar-item">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a></li>
+                <li><a href="appointment.html" class="sidebar-item active">
+                    <span class="sidebar-icon">📅</span>
+                    Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">📁</span>
+                    Upload Documents
+                </a></li>
+                <li><a href="chat.html" class="sidebar-item">
+                    <span class="sidebar-icon">💬</span>
+                    Chat with Doctor
+                </a></li>
+                <li><a href="payment.html" class="sidebar-item">
+                    <span class="sidebar-icon">💳</span>
+                    Payments
+                </a></li>
+                <li><a href="index.html" class="sidebar-item">
+                    <span class="sidebar-icon">🚪</span>
+                    Logout
+                </a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Book Appointment</h1>
+                <p class="page-subtitle">Select a doctor, date and time for your appointment</p>
+            </div>
+
+            <!-- Doctor Selection -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Select Doctor</h2>
+                </div>
+                <div class="section-body">
+                    <div class="doctor-grid">
+                        <div class="doctor-card" style="border: 2px solid var(--primary-blue);">
+                            <div class="doctor-image">👨‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Rahul Sharma</h3>
+                                <p class="doctor-specialization">General Physician</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">👩‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Divya Nair</h3>
+                                <p class="doctor-specialization">Dermatologist</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">👨‍⚕️</div>
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. Amit Patel</h3>
+                                <p class="doctor-specialization">Cardiologist</p>
+                                <div class="doctor-rating">
+                                    <span class="doctor-rating-stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="doctor-rating-value">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Container -->
+            <div class="booking-container">
+                <!-- Calendar Section -->
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <h3 class="calendar-title">Select Date</h3>
+                        <div class="calendar-nav">
+                            <button>◀</button>
+                            <button>▶</button>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+
+                        <!-- Empty cells for alignment -->
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day disabled">31</div>
+                        <div class="calendar-day disabled"></div>
+                        <div class="calendar-day disabled"></div>
+                    </div>
+                </div>
+
+                <!-- Time Slots Section -->
+                <div class="time-slots-section">
+                    <div class="time-slots-header">
+                        <h3 class="time-slots-title">Select Time Slot</h3>
+                        <p class="time-slots-subtitle">30-minute slots available</p>
+                    </div>
+
+                    <div class="time-slots-grid">
+                        <div class="time-slot selected">09:00 AM</div>
+                        <div class="time-slot">09:30 AM</div>
+                        <div class="time-slot">10:00 AM</div>
+                        <div class="time-slot">10:30 AM</div>
+                        <div class="time-slot">11:00 AM</div>
+                        <div class="time-slot">11:30 AM</div>
+                        <div class="time-slot">12:00 PM</div>
+                        <div class="time-slot">12:30 PM</div>
+                        <div class="time-slot booked">01:00 PM</div>
+                        <div class="time-slot booked">01:30 PM</div>
+                        <div class="time-slot">02:00 PM</div>
+                        <div class="time-slot">02:30 PM</div>
+                        <div class="time-slot">03:00 PM</div>
+                        <div class="time-slot">03:30 PM</div>
+                        <div class="time-slot">04:00 PM</div>
+                        <div class="time-slot">04:30 PM</div>
+                        <div class="time-slot">05:00 PM</div>
+                        <div class="time-slot">05:30 PM</div>
+                        <div class="time-slot">06:00 PM</div>
+                        <div class="time-slot">06:30 PM</div>
+                        <div class="time-slot">07:00 PM</div>
+                        <div class="time-slot">07:30 PM</div>
+                        <div class="time-slot booked">08:00 PM</div>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <div class="form-group">
+                            <label class="form-label">Consultation Type</label>
+                            <select class="form-input">
+                                <option>Video Consultation</option>
+                                <option>Audio Consultation</option>
+                                <option>Clinic Visit</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Describe your symptoms (optional)</label>
+                            <textarea class="form-input" placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                        </div>
+
+                        <a href="payment.html" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 15px;">
+                            <span>📅</span> Confirm Booking
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Summary -->
+            <div class="section" style="margin-top: 25px;">
+                <div class="section-header">
+                    <h2 class="section-title">📋 Booking Summary</h2>
+                </div>
+                <div class="section-body">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div>
+                            <p style="color: var(--gray-500); font-size: 0.9rem;">Doctor</p>
+                            <p style="font-weight: 600; color: var(--gray-800);">Dr. Rahul Sharma</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--gray-500); font-size: 0.9rem;">Specialization</p>
+                            <p style="font-weight: 600; color: var(--gray-800);">General Physician</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--gray-500); font-size: 0.9rem;">Date</p>
+                            <p style="font-weight: 600; color: var(--gray-800);">December 20, 2024</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--gray-500); font-size: 0.9rem;">Time</p>
+                            <p style="font-weight: 600; color: var(--gray-800);">09:00 AM</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--gray-500); font-size: 0.9rem;">Consultation Fee</p>
+                            <p style="font-weight: 600; color: var(--primary-blue);">₹500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

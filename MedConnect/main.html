@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedConnect - Doctor Patient Consultation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="auth-container">
+        <div class="auth-header">
+          <div class="auth-logo">🏥</div>
+          <h1 class="auth-title">MedConnect</h1>
+          <p class="auth-subtitle">Your trusted healthcare platform</p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div style="display: flex; gap: 10px; margin-bottom: 25px">
+          <a
+            href="#phone"
+            class="btn btn-sm btn-secondary"
+            style="flex: 1; text-align: center; text-decoration: none"
+            >📱 Phone</a
+          >
+          <a
+            href="#otp"
+            class="btn btn-sm btn-secondary"
+            style="flex: 1; text-align: center; text-decoration: none"
+            >🔐 OTP</a
+          >
+          <a
+            href="#role"
+            class="btn btn-sm btn-secondary"
+            style="flex: 1; text-align: center; text-decoration: none"
+            >👤 Role</a
+          >
+        </div>
+
+        <!-- Phone Section -->
+        <div id="phone" style="margin-bottom: 30px">
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="+91 9876543210" />
+          </div>
+          <a
+            href="#otp"
+            class="btn btn-primary btn-lg"
+            style="display: block; text-align: center; text-decoration: none"
+          >
+            <span>Send OTP</span>
+            <span>📱</span>
+          </a>
+        </div>
+
+        <!-- OTP Section -->
+        <div id="otp" style="margin-bottom: 30px">
+          <div class="text-center mb-2">
+            <p class="auth-subtitle">Enter the 4-digit OTP</p>
+          </div>
+
+          <div class="otp-container">
+            <input type="text" class="otp-input" maxlength="1" />
+            <input type="text" class="otp-input" maxlength="1" />
+            <input type="text" class="otp-input" maxlength="1" />
+            <input type="text" class="otp-input" maxlength="1" />
+          </div>
+
+          <a
+            href="#role"
+            class="btn btn-primary btn-lg"
+            style="display: block; text-align: center; text-decoration: none"
+          >
+            <span>Verify OTP</span>
+            <span>✅</span>
+          </a>
+
+          <div class="text-center mt-2">
+            <p class="auth-subtitle">
+              Didn't receive OTP? <a href="#" class="text-primary">Resend</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Role Selection -->
+        <div id="role" style="margin-bottom: 25px">
+          <div class="text-center mb-3">
+            <h3 class="auth-title">Select Your Role</h3>
+            <p class="auth-subtitle">Choose how you want to continue</p>
+          </div>
+
+          <div class="role-selection">
+            <a href="doctor-dashboard.html" class="role-card">
+              <div class="role-icon">👨‍⚕️</div>
+              <div class="role-title">Doctor</div>
+              <div class="role-desc">Manage patients & appointments</div>
+            </a>
+            <a href="patient-dashboard.html" class="role-card">
+              <div class="role-icon">🧑‍🎓</div>
+              <div class="role-title">Patient</div>
+              <div class="role-desc">Book appointments & consult</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="auth-footer">
+          <p>
+            By continuing, you agree to our <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

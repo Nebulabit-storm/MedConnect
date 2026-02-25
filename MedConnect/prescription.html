@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Prescription - MedConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">🏥</div>
+                <span>MedConnect</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="doctor-dashboard.html" class="navbar-item">Dashboard</a>
+                <a href="#" class="navbar-item">Patients</a>
+                <a href="#" class="navbar-item">Appointments</a>
+                <a href="#" class="navbar-item">Prescriptions</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="profile-btn">
+                    <div class="profile-avatar">DR</div>
+                    <span class="profile-name">Dr. Rahul Sharma</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="doctor-dashboard.html" class="sidebar-item">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">📅</span>
+                    Today's Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">✅</span>
+                    Completed Appointments
+                </a></li>
+                <li><a href="#" class="sidebar-item">
+                    <span class="sidebar-icon">💰</span>
+                    Revenue
+                </a></li>
+                <li><a href="prescription.html" class="sidebar-item active">
+                    <span class="sidebar-icon">📝</span>
+                    Write Prescription
+                </a></li>
+                <li><a href="chat.html" class="sidebar-item">
+                    <span class="sidebar-icon">💬</span>
+                    Chat
+                </a></li>
+                <li><a href="index.html" class="sidebar-item">
+                    <span class="sidebar-icon">🚪</span>
+                    Logout
+                </a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Write Prescription</h1>
+                <p class="page-subtitle">Create a new prescription for your patient</p>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Patient Information</h2>
+                </div>
+                <div class="section-body">
+                    <div class="prescription-patient">
+                        <div class="prescription-patient-avatar">AK</div>
+                        <div class="prescription-patient-info">
+                            <h4>Amit Kumar</h4>
+                            <p>Male, 28 years • Patient ID: P-2024-001</p>
+                            <p>📞 +91 9876543210 • 📧 amit.kumar@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Prescription Details</h2>
+                </div>
+                <div class="section-body">
+                    <form class="prescription-form">
+                        <div class="form-group">
+                            <label class="form-label">Chief Complaint</label>
+                            <textarea class="form-input" placeholder="Describe the patient's main symptoms or complaint..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Diagnosis</label>
+                            <textarea class="form-input" placeholder="Enter your diagnosis..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Medicines</label>
+                            <div class="prescription-medicines">
+                                <div class="medicine-row">
+                                    <input type="text" class="medicine-input" placeholder="Medicine Name">
+                                    <input type="text" class="medicine-input" placeholder="Dosage">
+                                    <input type="text" class="medicine-input" placeholder="Frequency">
+                                    <button type="button" class="remove-medicine-btn">✕</button>
+                                </div>
+                                <div class="medicine-row">
+                                    <input type="text" class="medicine-input" placeholder="Medicine Name">
+                                    <input type="text" class="medicine-input" placeholder="Dosage">
+                                    <input type="text" class="medicine-input" placeholder="Frequency">
+                                    <button type="button" class="remove-medicine-btn">✕</button>
+                                </div>
+                                <div class="medicine-row">
+                                    <input type="text" class="medicine-input" placeholder="Medicine Name">
+                                    <input type="text" class="medicine-input" placeholder="Dosage">
+                                    <input type="text" class="medicine-input" placeholder="Frequency">
+                                    <button type="button" class="remove-medicine-btn">✕</button>
+                                </div>
+                            </div>
+                            <button type="button" class="add-medicine-btn">
+                                <span>+</span> Add Medicine
+                            </button>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Medical Advice / Notes</label>
+                            <textarea class="form-input" placeholder="Enter any additional medical advice or notes for the patient..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Follow-up Date</label>
+                            <input type="date" class="form-input">
+                        </div>
+
+                        <div style="display: flex; gap: 15px; margin-top: 20px;">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <span>💾</span> Save Prescription
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-lg">
+                                <span>🖨️</span> Print
+                            </button>
+                            <button type="button" class="btn btn-outline btn-lg">
+                                <span>✕</span> Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
